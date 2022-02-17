@@ -1,0 +1,32 @@
+body {
+    background-color: lightblue;
+    color: black;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+*{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hding {
+    color:  #ffa500;
+    width: 90%;
+    font-size: 30px;
+}
+
+.hding:hover {
+    color: #ffa500 !important;
+}
+
+.name_of_objects {
+    width: 60%;
+    font-size: 20px;
+    color: black;
+}
+
+#camera, #result {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
