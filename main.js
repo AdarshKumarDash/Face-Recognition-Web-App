@@ -23,3 +23,18 @@ classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models
 function modelloaded() {
     console.log("Model Loaded");
 }
+
+function recognize() {
+    img = document.getElementById("captured_img");
+    classifier.classify(img, gotResult);
+}
+
+function gotResult(error, result) {
+    if(error) {
+        console.log(error);
+    } else {
+        console.log(result);
+        document.getElementById("object").innerHTML = result[0].label;
+        document.getElementById("accuracy").innerHTML = result[0].confidence.toFixed(3);
+    }
+}
